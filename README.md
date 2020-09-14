@@ -1,1 +1,1 @@
-"# Estudos-rocket" 
+# Estudos da plataforma da Rocketseat 
