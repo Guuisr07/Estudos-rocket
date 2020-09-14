@@ -1,0 +1,70 @@
+Manipulando Vetores 
+
+//Manipulaçao de vetor 
+const arr = [ 1, 2, 3, 5, 7, 9];
+
+const newArr = arr.map(function(item, index) { //Map serve para percorrer um vetor e retornar um item para o que tem dentro do vetor, e o index que corresponde a posiçao de cada elemento
+    return item + index; 
+});
+
+console.log(newArr);
+
+const sum = arr.reduce(function(total, next){//Reduce serve para retornar a soma dos valores dentro de um vetor
+    return total + next;
+})
+
+console.log(sum);
+
+const filter = arr.filter(function(item){//Filter serve para filtrar os conteudos dentro de um vetor, nesse exemplo esta retornando apenas os numeros pares do vetor
+    return item % 2 === 0;
+})
+
+console.log(filter);
+
+const find = arr.find(function(item){//Find serve para procurar dentro  de um  array um conteudo desejado, retornando o valor desejado 
+    return item === 7;
+});
+
+console.log(find);
+
+Criaçao de classes usando ES6 no JavaScript
+
+//Metodo static
+// class Matematica{
+//     static soma(a, b){
+//         return a + b;
+//     }
+// }
+
+// console.log(Matematica.soma(1, 2));
+
+
+// //Criaçao de classes, e herança usando extends
+// class List {
+//     constructor(){
+//         this.data = [];
+//     }
+//     add(data){
+//         this.data.push(data);
+//         console.log(this.data);
+//     }
+// }
+
+// class TodoList extends List {
+//     constructor(){
+//         super();
+
+//         this.usuario = 'Guilherme';
+//     }
+
+//     mostraUsuario(){
+//         console.log(this.usuario);
+//     }
+// }
+// const MinhaLista = new TodoList();
+
+// document.getElementById('novoTodo').onclick = function(){
+//     MinhaLista.add('Novo todo');
+// }
+
+// MinhaLista.mostraUsuario();
